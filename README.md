@@ -1,9 +1,6 @@
 # Examiner
 A Real Time, Virtual Platform for Taking MCQ based Exam. 
 
-# Github Repository
-https://github.com/FzArnob/Examiner
-
 Live Demo of the project is available at:
 http://www.examiner.cf
 
