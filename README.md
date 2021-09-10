@@ -2,7 +2,7 @@
 A Real Time, Virtual Platform for Taking MCQ based Exam. 
 
 Live Demo of the project is available at:
-http://www.examiner.cf
+https://fzs-lab.com/Examiner/
 
 # Login Info:
 - Email: fz.arnob@gmail.com
