@@ -6,6 +6,9 @@ A Real Time, Virtual Platform for Taking MCQ based Exam.
 - Email: fz.arnob@gmail.com
 - Password: 123
 
+# Admin Login Info:
+- Email: admin@examiner.cf
+- Password: 7287567Me
 
 # Languages used:
 - PHP
