@@ -1,5 +1,5 @@
 # Examiner
-A Real Time, Virtual Platform for Taking MCQ based Exam. 
+Examiner is a real-time, virtual platform tailored for Multiple-Choice Question (MCQ) based exams. This dynamic solution caters specifically to the needs of educational institutions, furnishing students with a secure and streamlined environment for exam participation.
 
 
 # Login Info:
