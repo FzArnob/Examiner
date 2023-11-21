@@ -4,6 +4,8 @@
 // redirect user to login page if they're not logged in
 if (empty($_SESSION['email'])) {
     header('location: ./view/login.php');
+} elseif ($_SESSION['email'] == "adminCSX_$#9087@examiner.cf") {
+    header('location: ./view/admin.php');
 }
 ?>
 <!DOCTYPE html>
@@ -243,7 +245,7 @@ if (mysqli_num_rows($result) > 0) {
           
         </div>
         <div class="copyright">
-          <a style="font-size: 15px; margin-bottom: 30px;">&copy; Examiner. All rights reserved. Designed by Fz Arnob</a>
+          <a style="font-size: 15px; margin-bottom: 30px;">&copy; 2021, Examiner. All rights reserved.</a>
         </div>
       </footer>
 
@@ -296,7 +298,7 @@ $num_p = sprintf("%02d", $num);
 ?>
 <p style="display: inline-block; margin-left: 5px; margin-right: 5px; margin-bottom: 0px;"><span style="background: #42bbad; padding: 10px;">[ <span style="color: white;"><?php echo $num_p; ?></span> ]</span>
   <?php
-                      foreach (range(A, E) as $op) {
+                      for ($op = 'A'; $op <= 'E'; $op++) {
                         ?>
                         <input id="a" type="radio" name="quizcheck[<?php echo $i; ?>]" id="<?php echo $i; ?>" value="<?php echo $op; ?>"  ><?php echo $op; ?>
                         <?php
@@ -396,7 +398,7 @@ clearInterval(x);
 </div>  
         <footer id="footer" style=" ">
         <div class="copyright" style="background: #162e38; text-align: center; padding: 20px; border-radius: 5px; margin: 10px; margin-bottom: 30px; color: white;">
-          <a style="font-size: 15px; font: caption; text-align: center;">&copy; Examiner. All rights reserved. Designed by Fz Arnob</a>
+          <a style="font-size: 15px; font: caption; text-align: center;">&copy; 2021, Examiner. All rights reserved.</a>
         </div>
       </footer>
 
@@ -471,7 +473,7 @@ if (mysqli_num_rows($results->check_duplicate()) > 0) {
           
         </div>
         <div class="copyright" style="background: #0c7f72; text-align: center; padding: 20px; border-radius: 5px; margin: 10px; margin-bottom: 30px; color: white;">
-          <a style="font-size: 15px; font: caption; text-align: center;">&copy; Examiner. All rights reserved. Designed by Fz Arnob</a>
+          <a style="font-size: 15px; font: caption; text-align: center;">&copy; 2021, Examiner. All rights reserved. Designed by Fz Arnob</a>
         </div>
       </footer>
 

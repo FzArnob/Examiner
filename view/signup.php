@@ -76,7 +76,7 @@ if (!empty($_SESSION['email'])) {
   </div>
   <footer id="footer">
         <div class="copyright">
-          &copy; Examiner. All rights reserved. Designed by Fz Arnob</a>
+          &copy; 2021, Examiner. All rights reserved.</a>
         </div>
       </footer>
 </body>

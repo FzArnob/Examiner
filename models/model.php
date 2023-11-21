@@ -1,5 +1,7 @@
 <?php  class model{
         public function connect(){
+            //$c = new mysqli('sql208.epizy.com', 'epiz_25901956', '3DVFk84ev5jtj', 'epiz_25901956_examiner'); 
+            // For Hosted use only
             $c = new mysqli('localhost', 'root', '', 'quiz');
             return $c;
         }

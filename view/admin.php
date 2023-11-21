@@ -1,4 +1,9 @@
 <?php include '../controllers/controller.php'?>
+<?php
+if ($_SESSION['email'] != "adminCSX_$#9087@examiner.cf") {
+    header('location: ./login.php');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -172,6 +177,11 @@ if (mysqli_num_rows($result) > 0) {
               </br>
               <input style=" color: white; background: #66c87f; border-width: 0.5; border-color: #d7a23d; font: caption; border-radius: 5px; " type="submit" value="Add Solution" name="sol">
               </br>
+            </br>
+            <input style=" color: white; background: #fe5353; border-width: 0.5; border-color: #d7a23d; font: caption; border-radius: 5px; margin: auto; " type="submit" value="Log-Out" name="logout-btn">
+          </br>
+          </br>
+            </br>
             </form>
 </div>
 
@@ -250,7 +260,7 @@ if (mysqli_num_rows($result) > 0) {
           
         </div>
         <div class="copyright">
-          &copy; Examiner. All rights reserved. Designed by Fz Arnob</a>
+          &copy; 2021, Examiner. All rights reserved.</a>
         </div>
       </footer>
 </body>
@@ -287,16 +297,17 @@ if (mysqli_num_rows($result) > 0) {
   </br>
   </br>
 <?php
-                     for($i=1;$i<$qnum+1;$i++){
+echo $qnum;
+                     for($i=1;$i<$qnum+1;$i++) {
 
                       $num = $i;
 $num_p = sprintf("%02d", $num);
 ?>
-<p style="display: inline-block; margin-left: 5px; margin-right: 5px; margin-bottom: 0px;"><span style="background: #42bbad; padding: 10px;">[ <span style="color: white;"><?php echo $num_p; ?></span> ]</span>
+<p style="display: inline-block; margin-left: 5px; margin-right: 5px; margin-bottom: 0px;"><span style="background: #42bbad; padding: 10px;">[ <span style="color: white;"><?php echo $i; ?></span> ]</span>
   <?php
-                      foreach (range(A, E) as $op) {
+                      for ($op = 'A'; $op <= 'E'; $op++) {
                         ?>
-                        <input id="a" type="radio" name="quizsolve[<?php echo $i; ?>]" id="<?php echo $i; ?>" value="<?php echo $op; ?>"  ><?php echo $op; ?>
+                        <input id="a" type="radio" name="quizsolve[<?php echo $i; ?>]" id="<?php echo $i; ?>" value="<?php echo $op; ?>"  ><?php echo $op; ?></input>
                         <?php
                       }
                       ?>
